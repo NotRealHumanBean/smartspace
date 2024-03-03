@@ -1,0 +1,11 @@
+@media (max-width: 1199.98px) {
+  [class*="__cintainer"] {
+    max-width: 970px; } }
+
+@media (max-width: 998.98px) {
+  [class*="__cintainer"] {
+    max-width: 750px; } }
+
+@media (max-width: 757.98px) {
+  [class*="__cintainer"] {
+    max-width: none; } }

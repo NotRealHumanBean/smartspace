@@ -1,0 +1,163 @@
+.page {
+    &__featured {
+        margin-top: 125px;
+        @media(max-width: 990.98px) {
+            margin-top: 25px;
+        }
+    }
+}
+.featured {
+    &__title-block {
+        padding-bottom: 95px;
+        @media(max-width: 990.98px) {
+            padding-bottom: 40px;
+        }
+    }
+    &__title {
+        color: #000;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 600;
+    }
+    &__body {
+        background: #F1FFFF;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 77px;
+        @media(max-width: 1200px) {
+            column-gap: 17px;
+        }
+        @media(max-width: 992px) {
+           grid-template-columns: 90%;
+           grid-template-rows: 1fr 1fr;
+           justify-content: center;
+           padding: 20px 20px 42px 20px;
+
+        }
+        @media(max-width: 490px) {
+            padding: 0;
+            grid-template-columns: 100%;
+        }
+        padding: 40px 40px 82px 40px;
+    }
+    &__images {
+        position: relative;
+    }
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .image-1 {
+        height: 364px;
+    }
+    &__text-block {
+        margin-top: 50px;
+    }
+    &__net {
+        margin-bottom: 55px;
+    }
+    &__link {
+        border-radius: 5px;
+        background: #F85A47;
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding: 16.5px 40px;
+        width: 100%;
+        text-transform: uppercase;
+        transition: all 0.3s ease 0s;
+        box-shadow: 0px 1.852px 3.148px 0px rgba(248, 90, 71, 0.02), 0px 8.148px 6.519px 0px rgba(248, 90, 71, 0.03), 0px 20px 13px 0px rgba(248, 90, 71, 0.04), 0px 38.519px 25.481px 0px rgba(248, 90, 71, 0.04), 0px 64.815px 46.852px 0px rgba(248, 90, 71, 0.05), 0px 100px 80px 0px rgba(248, 90, 71, 0.07);
+        @media(max-width: 992px) { 
+            display: inline-block;
+            margin: 0 auto;
+            letter-spacing: 2px;
+        }
+    }
+    &__link:hover {
+        cursor: pointer;
+        background-color: #a03327;
+    }
+}
+.rotated {
+    margin-top: 252px;
+    width: 81%;
+    height: 276px;
+    left: 9.5%;  
+    box-shadow: 48px 58px 44px 0px rgba(0, 0, 0, 0.09), 0px 3.019px 3.148px 0px rgba(0, 0, 0, 0.01), 0px 13.281px 6.519px 0px rgba(0, 0, 0, 0.02), 0px 32.6px 13px 0px rgba(0, 0, 0, 0.02), 0px 62.785px 25.481px 0px rgba(0, 0, 0, 0.02), 0px 105.648px 46.852px 0px rgba(0, 0, 0, 0.03), 0px 163px 80px 0px rgba(0, 0, 0, 0.04);
+}
+.text-block {
+    @media(max-width: 992px) { 
+        margin-top: 80px;
+        &__title {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+    @media(max-width: 600px) {
+        margin-top: 2px;
+    }
+    &__title {
+        color: #000;
+        font-size: 31px;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 28px;
+    }
+    &__text {
+        color: #545A58;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        text-align: center;
+        @media(min-width: 992.98x) {
+            width: 344px; 
+        }
+        margin-bottom: 40px;
+    }
+}
+.net {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 1fr 1fr;
+    row-gap: 37px;
+    @media(max-width: 992px) {
+        justify-items: center;
+        &__shell {
+            justify-items: center;
+        }
+    }
+    &__shell {
+        display: grid;
+        grid-template-rows: auto auto;
+        row-gap: 12px;
+    }
+    &__title {
+        color: #000;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: normal;
+    }
+    &__subtitle {
+        color: #545A58;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+@media(max-width: 400px) {
+    .featured__images {
+        display: none;
+    }
+    .featured__body {
+        grid-template-rows: 1fr;
+    }
+}
